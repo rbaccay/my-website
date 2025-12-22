@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
             localStorage.setItem("studentName", nameInput.value.trim());
-            window.location.href = "index.html";
+            window.location.href = "SecondPage.html";
         };
     }
 

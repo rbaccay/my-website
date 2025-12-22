@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP Lesson Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <img src="tup_logo.png" class="hero-logo" alt="TUP Logo">
+    <h1>Technological University of the Philippines</h1>
+    <p class="tagline">Lesson Access • Student Learning</p>
+</header>
+
+<div class="container">
+
+    <section class="welcome">
+        <h2 id="greeting">Welcome!</h2>
+        <button id="changeGreetingBtn">Change Greeting</button>
+    </section>
+
+    <section class="documents">
+        <h3>📚 Available Lessons</h3>
+
+        <ul class="doc-list">
+            <li><a href="lesson1.html" data-lesson="lesson1">Lesson 1 <span id="lesson1Status">  OPEN</span></a></li>
+            <li><a href="lesson2.html" data-lesson="lesson2">Lesson 2 <span id="lesson2Status">OPEN</span></a></li>
+            <li><a href="lesson3.html" data-lesson="lesson3">Lesson 3 <span id="lesson3Status">OPEN</span></a></li>
+        </ul>
+    </section>
+
+    <div id="resumeBox" style="text-align:center;margin-top:25px;"></div>
+
+</div>
+
+<footer>
+    <p>Developer: Joyce Ann Baccay © 2025</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
