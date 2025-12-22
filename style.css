@@ -1,0 +1,242 @@
+:root {
+    --tup-red: #C8102E;
+    --tup-grey: #4A4A4A;
+    --tup-light: #F9F9F9;
+}
+
+/* ===== GLOBAL LAYOUT ===== */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--tup-light);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+.main-header {
+    background: var(--tup-red);
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.hero-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* ===== FIRST PAGE HERO ===== */
+.hero-bg {
+    flex: 1;
+    min-height: 55vh;
+    background:
+        linear-gradient(rgba(233, 111, 131, 0.85), rgba(141, 16, 37, 0.85)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1")
+        center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-wrapper {
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-size: 2.4rem;
+    margin: 10px 0;
+}
+
+.hero-title span {
+    color: #b67982;
+}
+
+.hero-divider {
+    width: 80px;
+    height: 4px;
+    background: white;
+    margin: 12px auto 20px;
+    border-radius: 10px;
+}
+
+.hero-desc {
+    max-width: 720px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+.hero-pills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.hero-pills span {
+    background: rgba(255,255,255,0.18);
+    padding: 6px 14px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+}
+
+/* ===== HERO CARD ===== */
+.hero-card {
+    background: white;
+    color: var(--tup-grey);
+    padding: 25px;
+    border-radius: 16px;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.hero-card h3 {
+    color: var(--tup-red);
+    margin-top: 0;
+}
+
+.hero-card input {
+    width: 85%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid var(--tup-red);
+    margin: 12px 0;
+}
+
+.hero-card button {
+    width: 100%;
+    background: var(--tup-red);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ===== SECOND PAGE CONTENT ===== */
+.container {
+    flex: 1;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.subtext {
+    max-width: 650px;
+    margin: 10px auto 15px;
+    color: #801f1f;
+}
+
+.welcome button {
+    background: var(--tup-red);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.info-strip {
+    display: flex;
+    justify-content: space-around;
+    background: var(--tup-red);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.documents {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.doc-list {
+    list-style: none;
+    padding: 0;
+}
+
+.doc-list li {
+    margin: 10px 0;
+}
+
+.doc-list a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border: 2px solid var(--tup-red);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--tup-grey);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #A10824;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .hero-logo {
+        width: 100px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .info-strip {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+body.day {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.night {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.night a {
+    color: #90caf9;
+}
+
+body.night button {
+    background: #333;
+    color: #fff;
+}
